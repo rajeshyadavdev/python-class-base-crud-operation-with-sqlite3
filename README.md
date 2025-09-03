@@ -25,7 +25,7 @@ It demonstrates how to interact with an SQLite database through Python classes a
 ---
 
 ## 📂 Project Structure
-'''
+```bash
 emp/
 ├── dao/
 │ ├── init.py
@@ -41,7 +41,6 @@ emp/
 │ └── employee_services_impl.py
 ├── main.py
 
-'''
 ---
 
 ## 🚀 Getting Started
