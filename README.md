@@ -9,8 +9,8 @@ It demonstrates how to interact with an SQLite database through Python classes a
 ## ⚡ Features
 - Create a new record in the database  
 - Read (fetch) existing records  
-    1.fetchall
-	2.fetchone
+  - `fetchall`  
+  - `fetchone`  
 - Update records  
 - Delete records  
 - Uses **SQLite3** (lightweight, no external database server required)  
@@ -25,49 +25,56 @@ It demonstrates how to interact with an SQLite database through Python classes a
 ---
 
 ## 📂 Project Structure
+emp/
+├── dao/
+│ ├── init.py
+│ └── database.py
+├── model/
+│ ├── init.py
+│ └── employee.py
+├── service/
+│ ├── init.py
+│ └── employee_services.py
+├── service_impl/
+│ ├── init.py
+│ └── employee_services_impl.py
+├── main.py
 
-emp
-|--dao-|--__init__.py
-|      |
-|      |--database.py
-|
-|--model-|--__init__.py
-|      	 |
-|      	 |--employee.py
-|
-|--service-|--__init__.py
-|      	   |
-|          |--employee_services.py
-|
-|--server_impl-|--__init__.py
-|              |
-|              |--employee_services_impl.py
-|
-|--main.py
 
+---
 
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
-bash
-git clone  https://github.com/rajeshyadavdev/python-class-base-crud-operation-with-sqlite3.git
+```bash
+git clone https://github.com/rajeshyadavdev/python-class-base-crud-operation-with-sqlite3.git
 cd emp
-  
-  
 2️⃣ Run the app
-main.py
+bash
+Copy code
+python main.py
+🖥️ Usage (Menu-Driven CLI)
+When you run main.py, you’ll see:
 
-#When you run main.py, you’ll see a menu-driven CLI:
-
-Enter 1->insert-emp, 
-      2->get-all-emp, 
-      3->get-sigle-emp, 
+rust
+Copy code
+Enter 1->insert-emp,
+      2->get-all-emp,
+      3->get-sigle-emp,
       4->update-emp,
-      5->delete-emp, 
+      5->delete-emp,
       6->exit:
-  
-    
-    
-  
-    
-    
+👉 Example Flow:
+
+Add a new employee (name, age, city)
+
+View all employees
+
+Fetch single employee by ID
+
+Update employee details
+
+Delete an employee
+
+Exit the program
+
