@@ -25,6 +25,7 @@ It demonstrates how to interact with an SQLite database through Python classes a
 ---
 
 ## 📂 Project Structure
+'''
 emp/
 ├── dao/
 │ ├── init.py
@@ -40,7 +41,7 @@ emp/
 │ └── employee_services_impl.py
 ├── main.py
 
-
+'''
 ---
 
 ## 🚀 Getting Started
@@ -78,3 +79,12 @@ Delete an employee
 
 Exit the program
 
+✅ OOP Concepts Used
+
+Encapsulation → All database operations are inside service classes
+
+Abstraction → Methods like create_employee, get_employee_detail hide SQL complexity
+
+Reusability → Database logic can be reused for different models
+
+Maintainability → Clean structure with DAO, Model, Service, and Service Implementation
